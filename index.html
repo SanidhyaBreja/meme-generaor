@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="css/css/styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <style>
+        button {
+            width: 170px;
+            height: 50px;
+            background-color: #4ECC5B;
+            color: #fff;
+            border: 1px solid white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+  
+        button:hover {
+            background-color: #3ae04b;
+        }
+      body{
+        background-color: blanchedalmond;
+      }
+    .meme-generator{
+        margin:20px auto;
+        width: 400px;
+        font-family: sans-serif;
+       
+       
+    }
+    .meme-generator label{
+        display:block;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .meme-generator input{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom:20px;
+    }
+    #meme {
+        width:100%;
+    }
+    .image{
+        color: blue;
+
+    }
+    .imageFileInput{
+        background-color: blueviolet;
+        color: aliceblue;
+
+
+    }
+    @media screen and (min-width: 500px) {  
+        a {  
+            display: none  
+        }  
+    }  
+
+    </style>
+</head>
+<body>
+    <div class="meme-generator">
+        <img class="top-cloud" src="images/cloud.png" alt="cloud" />
+        <h2>MEME GENERATOR 😂😍🙄</h2>
+     <label class="image">Select an image</label>   
+     <input type="file" id="imageFileInput">
+     <label>Top Text</label>   
+     <input type="text" id="toptextInput">
+     <label>Bottom Text</label> 
+     <input type="text" id="bottomtextInput">
+     <!-- <h3 style="color:brown"> WhatsApp sharing Link </h3>   
+      create a link using anchor tab -->  
+     <!-- <a href="whatsapp://send?text=This is WhatsApp sharing example using link"       data-action="share/whatsapp/share"  
+         target="_blank"> Share to WhatsApp </a>    --> 
+        
+         <button class="fab fa-whatsapp" 
+         onclick="whatsapp()">
+         Share on Whatsapp
+     </button>
+
+     <canvas id="meme"></canvas>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+<script type="text/javascript">
+    function whatsapp() {
+        window.open
+("whatsapp://send?text=please share this link https://memezapur.netlify.app/")
+    }
+</script>
+</html>
